@@ -7,7 +7,8 @@ console.log("app.js:",process.toLocaleString());
 
 app.get('/', function(request, response) {
   response.send('Hello World! MSFT:x-code=');
-      //+process.env.x-code);
+
+   console.log(process.env.xcode || "default");
  // console.log(process.env.APPSETTING_x-code);
 })
 
