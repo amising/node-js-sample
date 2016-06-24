@@ -6,8 +6,9 @@ app.use(express.static(__dirname + '/public'))
 console.log("app.js:",process.toLocaleString());
 
 app.get('/', function(request, response) {
-  response.send('Hello World! MSFT:x-code='+process.env.x-code);
-  console.log(process.env.APPSETTING_x-code);
+  response.send('Hello World! MSFT:x-code=');
+      //+process.env.x-code);
+ // console.log(process.env.APPSETTING_x-code);
 })
 
 app.listen(app.get('port'), function() {
