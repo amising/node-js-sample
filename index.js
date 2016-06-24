@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'))
 console.log("app.js:",process.toLocaleString());
 
 app.get('/', function(request, response) {
-  response.send('Hello World! MSFT:x-code=');
+  response.send('Hello World! MSFT:x-code='+process.env.xcode);
 
    console.log(process.env.xcode || "default");
  // console.log(process.env.APPSETTING_x-code);
